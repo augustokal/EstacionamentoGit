@@ -19,7 +19,8 @@ namespace EstacionamentoGit
 
         private void registrarEntradaDeVeiculoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Vagas vagas = new Vagas();
+            vagas.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,11 +32,7 @@ namespace EstacionamentoGit
 
         private void gerênciaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            if (i == 2)
-            {
-
-            }
+           
         }
     }
 }
