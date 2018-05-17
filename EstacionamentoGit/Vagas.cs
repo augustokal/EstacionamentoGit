@@ -21,5 +21,11 @@ namespace EstacionamentoGit
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EntradaVeic entradaVeic = new EntradaVeic();
+            entradaVeic.Show();
+        }
     }
 }

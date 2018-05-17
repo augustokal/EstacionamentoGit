@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntradaVeic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntradaVeic.Designer.cs">
+      <DependentUpon>EntradaVeic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="Vagas.Designer.cs">
       <DependentUpon>Vagas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EntradaVeic.resx">
+      <DependentUpon>EntradaVeic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo fundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

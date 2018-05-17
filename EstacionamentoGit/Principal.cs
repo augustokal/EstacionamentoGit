@@ -28,5 +28,14 @@ namespace EstacionamentoGit
             Vagas vagas = new Vagas();
             vagas.Show();
         }
+
+        private void gerênciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            if (i == 2)
+            {
+
+            }
+        }
     }
 }
