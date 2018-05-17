@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace EstacionamentoGit
 {
-    public partial class Form1 : Form
+    public partial class Vagas : Form
     {
-        public Form1()
+        public Vagas()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Vagas_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            Principal principal = new Principal();
-            principal.Show();
         }
     }
 }

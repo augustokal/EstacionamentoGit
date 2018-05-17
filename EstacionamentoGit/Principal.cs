@@ -16,5 +16,17 @@ namespace EstacionamentoGit
         {
             InitializeComponent();
         }
+
+        private void registrarEntradaDeVeiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            Vagas vagas = new Vagas();
+            vagas.Show();
+        }
     }
 }
