@@ -12,6 +12,9 @@ namespace EstacionamentoGit
 {
     public partial class EntradaVeic : Form
     {
+
+        Veiculo veiculo;
+        Cliente cliente;
         public EntradaVeic()
         {
             InitializeComponent();
@@ -54,6 +57,18 @@ namespace EstacionamentoGit
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            veiculo = new Veiculo();
+            veiculo.Tipo = maskedTextBoxPlaca.Text;
+            veiculo.Placa = maskedTextBoxPlaca.Text;
+            veiculo.Modelo = Convert.ToString(comboBoxTipo.SelectedValue);
+
+
+            cliente = new Cliente();
+            cliente.Cpf = maskedTextBoxCPF.Text;
+            cliente.Nome = textBoxNome.Text;
+            cliente.Endereco = textBoxEndereco.Text;
+            cliente.Numero = maskedTextBoxNumero.Text;
             Dispose();
         }
     }
