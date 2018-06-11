@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.operacionalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarEntradaDeVeiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -38,41 +35,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.operacionalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEntradaDeVeiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioDiárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioMensalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.operacionalToolStripMenuItem,
-            this.gerênciaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1056, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // operacionalToolStripMenuItem
-            // 
-            this.operacionalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarEntradaDeVeiculoToolStripMenuItem});
-            this.operacionalToolStripMenuItem.Name = "operacionalToolStripMenuItem";
-            this.operacionalToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
-            this.operacionalToolStripMenuItem.Text = "Operacional";
-            // 
-            // registrarEntradaDeVeiculoToolStripMenuItem
-            // 
-            this.registrarEntradaDeVeiculoToolStripMenuItem.Name = "registrarEntradaDeVeiculoToolStripMenuItem";
-            this.registrarEntradaDeVeiculoToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
-            this.registrarEntradaDeVeiculoToolStripMenuItem.Text = "Registrar entrada/saída de veiculo";
-            this.registrarEntradaDeVeiculoToolStripMenuItem.Click += new System.EventHandler(this.registrarEntradaDeVeiculoToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -96,6 +68,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Relatório mensal";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -105,6 +78,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Relatório diário";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -146,6 +120,21 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // operacionalToolStripMenuItem
+            // 
+            this.operacionalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarEntradaDeVeiculoToolStripMenuItem});
+            this.operacionalToolStripMenuItem.Name = "operacionalToolStripMenuItem";
+            this.operacionalToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
+            this.operacionalToolStripMenuItem.Text = "Operacional";
+            // 
+            // registrarEntradaDeVeiculoToolStripMenuItem
+            // 
+            this.registrarEntradaDeVeiculoToolStripMenuItem.Name = "registrarEntradaDeVeiculoToolStripMenuItem";
+            this.registrarEntradaDeVeiculoToolStripMenuItem.Size = new System.Drawing.Size(311, 26);
+            this.registrarEntradaDeVeiculoToolStripMenuItem.Text = "Registrar entrada/saída de veiculo";
+            this.registrarEntradaDeVeiculoToolStripMenuItem.Click += new System.EventHandler(this.registrarEntradaDeVeiculoToolStripMenuItem_Click);
+            // 
             // gerênciaToolStripMenuItem
             // 
             this.gerênciaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -161,12 +150,26 @@
             this.relatórioDiárioToolStripMenuItem.Name = "relatórioDiárioToolStripMenuItem";
             this.relatórioDiárioToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
             this.relatórioDiárioToolStripMenuItem.Text = "Relatório diário";
+            this.relatórioDiárioToolStripMenuItem.Click += new System.EventHandler(this.relatórioDiárioToolStripMenuItem_Click);
             // 
             // relatórioMensalToolStripMenuItem
             // 
             this.relatórioMensalToolStripMenuItem.Name = "relatórioMensalToolStripMenuItem";
             this.relatórioMensalToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
             this.relatórioMensalToolStripMenuItem.Text = "Relatório mensal";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.operacionalToolStripMenuItem,
+            this.gerênciaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1056, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // Principal
             // 
@@ -179,30 +182,29 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Principal";
             this.Text = "Principal";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem operacionalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarEntradaDeVeiculoToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem gerênciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatórioDiárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatórioMensalToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

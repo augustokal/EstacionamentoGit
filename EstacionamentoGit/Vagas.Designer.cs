@@ -68,6 +68,7 @@
             // 
             // button1
             // 
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(14, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(58, 86);

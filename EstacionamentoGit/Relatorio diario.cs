@@ -10,31 +10,26 @@ using System.Windows.Forms;
 
 namespace EstacionamentoGit
 {
-    public partial class SaidaVeic : Form
+    public partial class Relatorio_diario : Form
     {
-        public SaidaVeic()
+        public Relatorio_diario()
         {
             InitializeComponent();
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
+            Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)

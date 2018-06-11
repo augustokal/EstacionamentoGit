@@ -57,7 +57,10 @@ namespace EstacionamentoGit
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Vagas vagas = new Vagas();
+            vagas.att();
+
+
             veiculo = new Veiculo();
             veiculo.Tipo = maskedTextBoxPlaca.Text;
             veiculo.Placa = maskedTextBoxPlaca.Text;

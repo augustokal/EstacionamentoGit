@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Conexoes\conexao.cs" />
     <Compile Include="EntradaVeic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorio diario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio diario.Designer.cs">
+      <DependentUpon>Relatorio diario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioMensal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioMensal.Designer.cs">
+      <DependentUpon>RelatorioMensal.cs</DependentUpon>
+    </Compile>
     <Compile Include="SaidaVeic.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +117,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Relatorio diario.resx">
+      <DependentUpon>Relatorio diario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioMensal.resx">
+      <DependentUpon>RelatorioMensal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SaidaVeic.resx">
       <DependentUpon>SaidaVeic.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +130,17 @@
       <DependentUpon>Vagas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Cliente.datasource" />
+    <None Include="Properties\DataSources\conexao.datasource" />
+    <None Include="Properties\DataSources\EntradaVeic.datasource" />
+    <None Include="Properties\DataSources\EstacionamentoGit.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\EstacionamentoGit.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Principal.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SaidaVeic.datasource" />
+    <None Include="Properties\DataSources\Vagas.datasource" />
+    <None Include="Properties\DataSources\Veiculo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
